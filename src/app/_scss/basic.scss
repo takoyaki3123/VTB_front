@@ -1,0 +1,68 @@
+@use 'tailwindcss';
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+// find oklch color code by https://oklch.com/#0.607,0,360,100
+@theme {
+  --color-navbar-border: rgba(200, 200, 200, 0.5);
+  --color-navbar-background: rgba(255, 255, 255);
+  --color-navbar-text: rgba(0, 0, 0);
+
+  --color-pure-white: oklch(1 0 0);
+  --color-pure-black: oklch(0 0 0);
+
+  // light mode
+  --color-base-light: oklch(0.9838 0.0081 262);
+  --color-base-hover-light: oklch(0.95 0 262);
+  --color-content-light: oklch(0.9838 0.0081 262);
+  --color-sub-base-light: oklch(
+    0.9838 0.0081 262
+  ); // for tooltip and some component like that
+
+  --color-line-light: oklch(0.9761 0 360);
+  --color-font-light: oklch(0.2 0.037 262.59);
+  --color-href-hover-light: oklch(0.485 0.0625 262.59);
+
+  // dark mode
+  --color-base-dark: oklch(0.2 0.037 262.59);
+  --color-base-hover-dark: oklch(0.5 0.037 262.59);
+  --color-content-dark: oklch(0.5275 0 262 / 0.5);
+  --color-sub-base-dark: oklch(
+    0.2 0.037 262.59
+  ); // for tooltip and some component like that
+
+  --color-line-dark: oklch(0.3171 0 360);
+  --color-font-dark: oklch(0.9838 0.0081 262);
+  --color-href-hover-dark: oklch(0.9541 0.0367 190.54);
+
+  --font-JP: Montserrat, Noto Sans JP, sans-serif;
+}
+
+// css variable
+:root {
+  --nav-mobile-content-h: calc(100vh - 100%);
+  --home-swiper-item-space: 80vw;
+  --container-width: 100vw;
+
+  @media (width >= 48rem) {
+    --home-swiper-item-space: calc(var(--spacing) * 80);
+    --container-width: var(--container-5xl);
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p,
+span,
+font,
+a {
+  @apply text-font-light dark:text-font-dark;
+}
+
+a[href] {
+  @apply hover:text-href-hover-light hover:dark:text-href-hover-dark;
+}

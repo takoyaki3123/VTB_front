@@ -1,0 +1,40 @@
+{
+  "Root": {
+    "title": "VTB World",
+    "content": "collect VTB data from internet user around the world."
+  },
+  "HomePage": {
+    "title": "VTB World",
+    "event": "EVENT",
+    "member": "MEMBER",
+    "group": "GROUP"
+  },
+  "eventPage": {
+    "event": "EVENT",
+    "title": "title",
+    "activityPeriod": "Activity period",
+    "offcialSite": "Offcial Site",
+    "otherMember": "Other Member",
+    "otherEvent": "Other Event"
+  },
+  "memberPage": {
+    "member": "MEMBER",
+    "name": "name",
+    "startActiveDate": "Activity Start Date",
+    "otherMember": "Other Member",
+    "otherEvent": "Other Event"
+  },
+  "groupPage": {
+    "group": "GROUP",
+    "startActiveDate": "Activity Start Date",
+    "otherGroup": "Other Group",
+    "SponsoredEvents": "Sponsored Events",
+    "groupMember": "Group Member"
+  },
+  "Navbar": {
+    "home": "VTB",
+    "member": "MEMBER",
+    "event": "EVENT",
+    "group": "GROUP"
+  }
+}

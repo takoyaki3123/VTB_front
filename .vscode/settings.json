@@ -1,0 +1,33 @@
+{
+  "editor.tabCompletion": "on",
+  "editor.formatOnSave": true,
+  "scss.lint.unknownAtRules": "ignore",
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "ngClass",
+    "class:list",
+    "classes"
+  ],
+  "tailwindCSS.experimental.classRegex": [
+    // ["Story \\=([^;]*);", "'([^']*)'"],
+    // ["Story \\=([^;]*);", "\"([^\"]*)\""],
+    // ["Story \\=([^;]*);", "\\`([^\\`]*)\\`"],
+    ["classes \\=([^;]*);", "'([^']*)'"],
+    ["classes \\=([^;]*);", "\"([^\"]*)\""],
+    ["classes \\=([^;]*);", "\\`([^\\`]*)\\`"],
+    ["Classes \\=([^;]*);", "'([^']*)'"],
+    ["Classes \\=([^;]*);", "\"([^\"]*)\""],
+    ["Classes \\=([^;]*);", "\\`([^\\`]*)\\`"],
+    ["Classes \\=([^;]*);", "\\`([^\\`]*)\\`"]
+  ],
+  "tailwindCSS.classFunctions": ["cn"],
+  "diffEditor.ignoreTrimWhitespace": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "eslint.format.enable": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.tabSize": 2
+}

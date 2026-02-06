@@ -1,0 +1,38 @@
+{
+  "Root": {
+    "title": "VTB世界",
+    "content": "世界のインターネットユーザーからVTB情報を集める！"
+  },
+  "HomePage": {
+    "event": "イベント",
+    "member": "メンバー"
+  },
+  "eventPage": {
+    "event": "イベント",
+    "title": "イベント名",
+    "activityPeriod": "活動期間",
+    "offcialSite": "公式サイト",
+    "otherMember": "他のメンバー",
+    "otherEvent": "他のイベント"
+  },
+  "memberPage": {
+    "member": "メンバー",
+    "name": "名前",
+    "startActiveDate": "活動開始時間",
+    "otherMember": "他のメンバー",
+    "otherEvent": "他のイベント"
+  },
+  "groupPage": {
+    "group": "グループ",
+    "startActiveDate": "活動開始時間",
+    "otherGroup": "他のグループ",
+    "groupMember": "メンバー",
+    "SponsoredEvents": "主催のイベント"
+  },
+  "Navbar": {
+    "home": "VTB世界",
+    "member": "メンバー",
+    "event": "イベント",
+    "group": "グループ"
+  }
+}
